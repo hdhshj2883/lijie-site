@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Li Jie · 杰斯万 AI</title>
+  <meta name="description" content="Li Jie / JaysOne AI — 教你用 AI 的个人工作室" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-frame">
+    <!-- NAV -->
+    <header class="nav" id="top">
+      <a class="logo" href="#hero">Li Jie</a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#about" data-section="about">ABOUT</a>
+        <a href="#writing" data-section="writing">WRITING</a>
+        <a href="#video" data-section="video">VIDEO</a>
+        <a href="#build" data-section="build">BUILD</a>
+        <a href="#contact" data-section="contact">CONTACT</a>
+        <span class="nav-status" title="工作室状态"><i class="dot"></i>STUDIO</span>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <h1 class="hero-name">Li Jie</h1>
+        <p class="hero-tag"><span class="dot"></span>JaysOne AI · 杰斯万 AI</p>
+        <p class="hero-sub">
+          教你用 AI 的个人工作室<br />
+          做工具、拍内容、把 AI 用到实处
+        </p>
+        <div class="hero-ctas">
+          <a class="btn-outline" href="#writing">查看内容 →</a>
+          <a class="btn-outline" href="#contact">联系我 →</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="v-line"></div>
+        <canvas id="stippleHero" class="stipple-canvas" width="640" height="720" aria-label="原创点阵插画"></canvas>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="serif-xl">About me</h2>
+          <p class="about-bio">
+            我是 Li Jie，也叫杰斯万。<br />
+            做 AI 教学内容，也自己动手做工具。<br />
+            产品线：课格（排课表 App · Android + Web）。
+          </p>
+          <div class="id-card">
+            <div class="id-meta top">
+              <span>SPEC.001</span>
+              <span>VER. 0.1.0</span>
+              <span>BUILDER</span>
+            </div>
+            <canvas id="stippleId" width="280" height="320" aria-hidden="true"></canvas>
+            <div class="id-meta bottom">
+              <span>ID // LI JIE</span>
+              <span>FOCUS: AI · TOOLS · TEACH</span>
+            </div>
+            <span class="crosshair tl">+</span>
+            <span class="crosshair tr">+</span>
+            <span class="crosshair bl">+</span>
+            <span class="crosshair br">+</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="mode-tabs" role="tablist">
+            <button class="mode-tab active" data-mode="write" role="tab"><span>写</span><small>WRITE</small></button>
+            <button class="mode-tab" data-mode="shoot" role="tab"><span>拍</span><small>SHOOT</small></button>
+            <button class="mode-tab" data-mode="build" role="tab"><span>造</span><small>BUILD</small></button>
+          </div>
+          <div class="signal-station">
+            <div class="signal-head">
+              <h3>全平台信号台</h3>
+              <span class="live-badge"><i class="dot"></i> 部分 LIVE</span>
+            </div>
+            <ul class="signal-list">
+              <li>
+                <span class="plat">X</span>
+                <span class="handle">@待填写</span>
+                <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="soon">● SOON</span>
+              </li>
+              <li>
+                <span class="plat">抖音</span>
+                <span class="handle">@待填写</span>
+                <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="soon">● SOON</span>
+              </li>
+              <li>
+                <span class="plat">B站</span>
+                <span class="handle">@待填写</span>
+                <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="soon">● SOON</span>
+              </li>
+              <li>
+                <span class="plat">小红书</span>
+                <span class="handle">@待填写</span>
+                <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="soon">● SOON</span>
+              </li>
+              <li>
+                <span class="plat">YouTube</span>
+                <span class="handle">@待填写</span>
+                <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="soon">● SOON</span>
+              </li>
+              <li>
+                <span class="plat">Telegram</span>
+                <span class="handle">@待填写</span>
+                <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="soon">● SOON</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="section writing" id="writing">
+      <div class="section-head">
+        <h2 class="serif-xl">Writing</h2>
+        <div class="sub-tabs">
+          <button class="sub-tab active" data-tab="write"><span class="dot"></span>写 — WRITE</button>
+          <button class="sub-tab soon" data-tab="shoot" disabled>拍 — SOON</button>
+          <button class="sub-tab soon" data-tab="build" disabled>造 — SOON</button>
+        </div>
+      </div>
+      <div class="writing-grid">
+        <article class="featured">
+          <div class="featured-art" id="featuredArt" aria-hidden="true"></div>
+          <div class="featured-body">
+            <h3>先问再改：新人用 AI 写代码的正确姿势</h3>
+            <p>别一上来就让 AI 瞎写。先让它搞懂仓库，再动手。</p>
+            <p class="meta">AI 认知 · 示例稿 · 日期待填</p>
+            <a class="read-more" href="#contact">阅读 →</a>
+          </div>
+        </article>
+        <div class="article-list">
+          <article class="list-item">
+            <span class="num">02</span>
+            <div class="list-body">
+              <h4>大改之前先要计划：一句话让 AI 别乱跑</h4>
+              <p class="meta">AI 实践 · 示例稿 · 日期待填</p>
+            </div>
+            <div class="thumb t1" aria-hidden="true"></div>
+          </article>
+          <article class="list-item">
+            <span class="num">03</span>
+            <div class="list-body">
+              <h4>给 AI 自检：测试和截图比你盯着有用</h4>
+              <p class="meta">教程类 · 示例稿 · 日期待填</p>
+            </div>
+            <div class="thumb t2" aria-hidden="true"></div>
+          </article>
+          <article class="list-item">
+            <span class="num">04</span>
+            <div class="list-body">
+              <h4>CLAUDE.md 写什么：把规矩写进文件里</h4>
+              <p class="meta">AI 工具 · 示例稿 · 日期待填</p>
+            </div>
+            <div class="thumb t3" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section video-section" id="video">
+      <div class="video-frame">
+        <div class="video-overlay">
+          <span class="rec">● REC 00:00:00</span>
+          <span class="ep">EP.01 · 筹备中</span>
+        </div>
+        <div class="video-center">
+          <p class="video-q">AI 时代最该先学会的能力是什么</p>
+          <p class="video-soon">敬请期待</p>
+        </div>
+        <div class="video-bar">
+          <span>00:00</span>
+          <div class="progress"><i style="width:0%"></i></div>
+          <span>0%</span>
+        </div>
+      </div>
+      <div class="video-label">
+        <span class="red-label">拍 — SHOOT</span>
+        <h2 class="serif-xl light">Shoot</h2>
+      </div>
+    </section>
+
+    <!-- BUILD -->
+    <section class="section build" id="build">
+      <div class="build-left">
+        <span class="red-label">造 — BUILD</span>
+        <h2 class="serif-xl">Build</h2>
+        <p class="build-status"><span class="dot"></span>公开建造中 · 课格 App</p>
+        <a class="gh-link" href="#contact">关注进度 →</a>
+        <ul class="git-timeline" aria-label="建造时间线（示例）">
+          <li><code>a7c3e91</code> <span>feat: 课格核心排课</span></li>
+          <li><code>b2d4f08</code> <span>feat: Web 端日历视图</span></li>
+          <li><code>c9e1a44</code> <span>feat: Android 同步</span></li>
+          <li class="head"><code>HEAD</code> <span>build: in public</span></li>
+        </ul>
+      </div>
+      <div class="build-right">
+        <div class="terminal" id="terminal">
+          <div class="term-bar">
+            <span class="c red"></span><span class="c yel"></span><span class="c grn"></span>
+            <span class="term-title">lijie — build</span>
+          </div>
+          <div class="term-body" id="termBody">
+            <div class="line"><span class="prompt">$</span> lijie build --in-public</div>
+          </div>
+          <div class="term-progress">
+            <div class="bar"><i id="termBar"></i></div>
+            <span id="termPct">v0.1.0 · compiling... 0%</span>
+          </div>
+        </div>
+        <div class="queued">
+          <span class="q-label">queued</span>
+          <div class="q-brace">{</div>
+          <ul>
+            <li>○ 课格 Web</li>
+            <li>○ AI 教学系列</li>
+            <li>○ 工具评测台</li>
+          </ul>
+        </div>
+        <div class="build-ruler" aria-hidden="true">
+          <span>0</span><span>240</span><span>480</span><span>720</span><span>960</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <p class="contact-eyebrow">— GET IN TOUCH / 联系 —</p>
+      <h2 class="serif-xxl contact-title">Let's talk.<i class="scribble"></i></h2>
+      <p class="contact-sub">聊聊 AI、课格，或者一起搞点事情。</p>
+      <p class="avail"><span class="dot"></span>当前开放合作 · Available</p>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>AI 实战 · 课格 · 杰斯万 AI · build in public · 教你用 AI · </span>
+          <span>AI 实战 · 课格 · 杰斯万 AI · build in public · 教你用 AI · </span>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <a class="c-cell" href="mailto:hello@example.com">
+          <span class="c-label">EMAIL</span>
+          <span class="c-val">hello@待填写.com →</span>
+        </a>
+        <a class="c-cell" href="#contact">
+          <span class="c-label">X</span>
+          <span class="c-val">@待填写 →</span>
+        </a>
+        <a class="c-cell" href="#contact">
+          <span class="c-label">Telegram</span>
+          <span class="c-val">@待填写 →</span>
+        </a>
+        <div class="c-cell wechat">
+          <span class="c-label">微信 / WeChat</span>
+          <div class="qr-placeholder" aria-label="二维码占位">
+            <canvas id="qrDots" width="96" height="96"></canvas>
+          </div>
+          <span class="c-hint">二维码待填写</span>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <span>© 2026 Li Jie · JaysOne AI</span>
+        <a href="#top">回到顶部 ↑</a>
+      </footer>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
